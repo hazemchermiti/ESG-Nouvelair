@@ -5,7 +5,7 @@ from app.controllers.waste_management_controller import router as waste_manageme
 from app.controllers.employee_controller import router as employee_router
 from app.controllers.training_controller import router as training_router
 from app.controllers.work_accident_controller import router as work_accident_router
-from app.controllers.payment_tracking_controller import router as payment_tracking_router
+from app.controllers.payment_tracking_controller import router as payment_tracking_controller
 from app.controllers.tax_obligation_controller import router as tax_obligation_router
 from app.controllers.aviation_license_controller import router as aviation_license_router
 from app.controllers.user_controller import router as user_router
@@ -20,7 +20,7 @@ app.include_router(waste_management_router)
 app.include_router(employee_router)
 app.include_router(training_router)
 app.include_router(work_accident_router)
-app.include_router(payment_tracking_router)
+app.include_router(payment_tracking_controller)
 app.include_router(tax_obligation_router)
 app.include_router(aviation_license_router)
 app.include_router(user_router)
